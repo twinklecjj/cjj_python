@@ -20,3 +20,4 @@ cat=Cat()
 cat.eat()
 cat.cry()
 cat.sleep()
+

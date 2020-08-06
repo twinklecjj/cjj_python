@@ -25,8 +25,11 @@
 ./python_practice/python_practice_demo/houyi
 #### houyi.py文件：通过导入模块的改造，优化了代码，本代码使后裔继承了Game的血量和攻击力，且后裔自带一个防御值，从而实现多回合制游戏
 
+./python_pytest/pytest_demo和./python_pytest/testing
+#### python pytest测试实战1课堂练习
 
-
+./python_pytest/pytest_practice1
+#### python pytest测试实战1
 
 
 

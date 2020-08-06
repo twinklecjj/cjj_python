@@ -1,0 +1,8 @@
+me:
+  hp: 1200
+  power: 200
+  skill: power*2
+you:
+  hp: 1000
+  power: 200
+  skill: power*2
