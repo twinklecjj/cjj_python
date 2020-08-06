@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="3" hostname="PC-202005170912" name="pytest" skipped="0" tests="11" time="0.219" timestamp="2020-08-07T01:29:08.930218"><testcase classname="test_calc.TestCalc" file="test_calc.py" line="9" name="test_add" time="0.003"></testcase><testcase classname="test_calc.TestCalc" file="test_calc.py" line="18" name="test_add1" time="0.003"></testcase><testcase classname="test_calc.TestCalc" file="test_calc.py" line="27" name="test_add2" time="0.002"></testcase><testcase classname="test_calc.TestCalc" file="test_calc.py" line="36" name="test_add3" time="0.002"></testcase><testcase classname="test_calc.TestCalc" file="test_calc.py" line="45" name="test_div" time="0.001"></testcase><testcase classname="test_calc.TestCalc" file="test_calc.py" line="54" name="test_div1" time="0.002"></testcase><testcase classname="test_demo" file="test_demo.py" line="1" name="test_a" time="0.001"></testcase><testcase classname="test_demo" file="test_demo.py" line="3" name="test_b" time="0.001"></testcase><testcase classname="test_demo" file="test_demo.py" line="5" name="test_c" time="0.002"><failure message="assert 1 == 2">def test_c():
+&gt;       assert 1 == 2
+E       assert 1 == 2
+
+test_demo.py:7: AssertionError</failure></testcase><testcase classname="test_demo" file="test_demo.py" line="7" name="test_d" time="0.004"><failure message="assert 100 == 200">def test_d():
+&gt;       assert 100 == 200
+E       assert 100 == 200
+
+test_demo.py:9: AssertionError</failure></testcase><testcase classname="test_demo" file="test_demo.py" line="9" name="test_e" time="0.002"><failure message="assert 200 == 300">def test_e():
+&gt;       assert 200 == 300
+E       assert 200 == 300
+
+test_demo.py:11: AssertionError</failure></testcase></testsuite></testsuites>
