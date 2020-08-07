@@ -64,10 +64,8 @@ class TestCalc:
             result = round(result, 2)
         elif isinstance(a, str):
             assert expect != result
-            raise Exception("提示错误信息")
         elif isinstance(b, str):
             assert expect != result
-            raise Exception("提示错误信息")
         # 断言
         assert expect == result
 
@@ -79,7 +77,6 @@ class TestCalc:
         result = self.calc.div(a, b)
         # 判断除数不能为0
         if b == 0:
-            raise Exception("除数不能为0")
             # 断言
             assert expect != result
         # 断言
