@@ -12,10 +12,9 @@
 # 注意：测试类里一定不要加__init__()方法
 import pytest
 import yaml
-# 读取文件
 from python_pytest.pytest_practice1.calc import Calculator
-
-with open('./calc.yaml') as f:
+# 读取文件
+with open('./calc.yaml',encoding='utf-8') as f:
     # safe_load()只能一次
     data = yaml.safe_load(f)
     # 获取add下的datas里的数据
@@ -61,11 +60,11 @@ class TestCalc:
         if isinstance(result, float):
             result = round(result, 2)
         elif isinstance(a, str):
+            # 断言
             assert expect != result
-            raise Exception("提示错误信息")
         elif isinstance(b, str):
+            # 断言
             assert expect != result
-            raise Exception("提示错误信息")
         # 断言
         assert expect == result
 
@@ -77,7 +76,6 @@ class TestCalc:
         result = self.calc.div(a, b)
         # 判断除数不能为0
         if b == 0:
-            raise Exception("除数不能为0")
             # 断言
             assert expect != result
         # 断言
