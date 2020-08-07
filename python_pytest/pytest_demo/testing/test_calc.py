@@ -12,10 +12,10 @@
 # 注意：测试类里一定不要加__init__()方法
 import pytest
 import yaml
-# 读取文件
-from python_pytest.pytest_demo.calc import Calculator
 
-with open('data/calc.yaml') as f:
+from python_pytest.pytest_demo.calc import Calculator
+# 读取文件
+with open('data/calc.yaml',encoding='utf-8') as f:
     # safe_load()只能一次
     data = yaml.safe_load(f)
     # 获取add下的datas里的数据
