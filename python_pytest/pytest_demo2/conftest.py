@@ -8,6 +8,7 @@ from pytest_demo2.calc import Calculator
 sys.path.append('../../..')
 print(sys.path)
 
+import os
 
 # 作用域：session>module>class>function
 # function：方法或函数级别调用一次
@@ -32,7 +33,8 @@ def get_calc():
 
 
 # 读取文件
-with open('data/calc.yaml', encoding='utf-8') as f:
+yamlfilepath = os.path.dirname(__file__) + "/data/calc.yaml"
+with open(yamlfilepath, encoding='utf-8') as f:
     # safe_load()只能一次
     data = yaml.safe_load(f)
     # 获取add下的datas里的数据
