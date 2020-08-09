@@ -48,14 +48,12 @@ class TongLao:
             print("我的剩余的血量是：", self.my_final_hp)
             print("你的剩余的血量是：", self.your_final_hp)
             print("我输了")
-            # 跳出所有循环
         # 当我的剩余血量大于你的剩余血量时，打印双方的剩余血量并输出你输了，退出整个循环
         elif self.my_final_hp > self.your_final_hp:
             # 输出我的剩余血量和你的剩余血量，并给出判断结果
             print("我的剩余的血量是：", self.my_final_hp)
             print("你的剩余的血量是：", self.your_final_hp)
             print("你输了")
-            # 跳出所有循环
         else:
             # 当我的剩余血量等于你的剩余血量时，抛出一个异常
             raise Exception("no peace, 不要平局，战斗到最后一刻")
