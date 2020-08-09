@@ -41,29 +41,26 @@ class TongLao:
         self.my_final_hp = my_hp1 - self.your_power
         self.your_final_hp = self.your_hp - my_power1
         # 进行一回合制对打，打完之后，比较双方血量。血多的一方获胜
-        while True:
-            # if...elif...else...语句判断
-            #当我的剩余血量小于你的剩余血量时，打印双方的剩余血量并输出我输了，退出整个循环
-            if self.my_final_hp < self.your_final_hp:
-                # 输出你的剩余血量和我的剩余血量，并给出判断结果
-                print("我的剩余的血量是：", self.my_final_hp)
-                print("你的剩余的血量是：", self.your_final_hp)
-                print("我输了")
-                # 跳出所有循环
-                break
-            # 当我的剩余血量大于你的剩余血量时，打印双方的剩余血量并输出你输了，退出整个循环
-            elif self.my_final_hp > self.your_final_hp:
-                # 输出我的剩余血量和你的剩余血量，并给出判断结果
-                print("我的剩余的血量是：", self.my_final_hp)
-                print("你的剩余的血量是：", self.your_final_hp)
-                print("你输了")
-                # 跳出所有循环
-                break
-            else:
-                # 当我的剩余血量等于你的剩余血量时，抛出一个异常
-                raise Exception("no peace, 不要平局，战斗到最后一刻")
+        # if...elif...else...语句判断
+        #当我的剩余血量小于你的剩余血量时，打印双方的剩余血量并输出我输了，退出整个循环
+        if self.my_final_hp < self.your_final_hp:
+            # 输出你的剩余血量和我的剩余血量，并给出判断结果
+            print("我的剩余的血量是：", self.my_final_hp)
+            print("你的剩余的血量是：", self.your_final_hp)
+            print("我输了")
+            # 跳出所有循环
+        # 当我的剩余血量大于你的剩余血量时，打印双方的剩余血量并输出你输了，退出整个循环
+        elif self.my_final_hp > self.your_final_hp:
+            # 输出我的剩余血量和你的剩余血量，并给出判断结果
+            print("我的剩余的血量是：", self.my_final_hp)
+            print("你的剩余的血量是：", self.your_final_hp)
+            print("你输了")
+            # 跳出所有循环
+        else:
+            # 当我的剩余血量等于你的剩余血量时，抛出一个异常
+            raise Exception("no peace, 不要平局，战斗到最后一刻")
 # 实例化类,并传参
-tonglao = TongLao("无崖子",1000,100,1000,100)
+tonglao = TongLao("无崖子",1000,100,1600,100)
 # 调用类的方法
 tonglao.see_people()
 tonglao.fight_zms()
