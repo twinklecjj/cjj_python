@@ -26,8 +26,9 @@ class TestCalc:
         # 断言
         assert get_adddatas[2] == result
 
+    # 定义一个check_sub()方法
     def check_sub(self, get_calc, get_subdatas):
-        # 调用它的相加add()方法
+        # 调用它的相减sub()方法
         result = get_calc.sub(get_subdatas[0], get_subdatas[1])
         # 判断result为小数的时候使用round取小数点后两位
         if isinstance(result, float):
@@ -41,6 +42,7 @@ class TestCalc:
         # 断言
         assert get_subdatas[2] == result
 
+    # 定义一个test_mul()方法
     def test_mul(self, get_calc, get_muldatas):
         # 调用它的相乘mul()方法
         result = get_calc.mul(get_muldatas[0], get_muldatas[1])
