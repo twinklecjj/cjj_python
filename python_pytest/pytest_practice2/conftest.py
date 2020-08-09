@@ -6,6 +6,7 @@ import sys
 sys.path.append('../../..')
 print(sys.path)
 from pytest_practice2.calc import Calculator
+import os
 
 
 @pytest.fixture(scope='function')
@@ -17,7 +18,8 @@ def get_calc():
 
 
 # 读取文件
-with open('./calc.yaml', encoding='utf-8') as f:
+yamlfilepath = os.path.dirname(__file__) + "/calc.yaml"
+with open(yamlfilepath, encoding='utf-8') as f:
     # safe_load()只能一次
     data = yaml.safe_load(f)
     # 获取add下的datas里的数据
