@@ -27,9 +27,15 @@
 
 ./python_pytest/pytest_demo和./python_pytest/testing
 #### python pytest测试实战1课堂练习
-
 ./python_pytest/pytest_practice1
 #### python pytest测试实战1
+
+./python_pytest/pytest_demo2
+#### python pytest测试实战2课堂练习
+
+./python_pytest/pytest_practice2
+#### python pytest测试实战2
+
 
 
 
