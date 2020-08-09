@@ -13,7 +13,7 @@
 import pytest
 import yaml
 
-from python_pytest.pytest_demo.calc import Calculator
+from python_demo2.pytest_demo.calc import Calculator
 # 读取文件
 with open('data/calc.yaml',encoding='utf-8') as f:
     # safe_load()只能一次
