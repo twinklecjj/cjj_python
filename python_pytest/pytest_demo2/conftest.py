@@ -32,8 +32,10 @@ def get_calc():
     return calc
 
 
-# 读取文件
+# 通过os.path.dirname(__file__)能够获取当前文件所在的目录
 yamlfilepath = os.path.dirname(__file__) + "/data/calc.yaml"
+# ./data/calc.yaml  ====>.代表当前路径，也就是说你在哪个路径下执行测试文件，就叫做当前路径
+# 读取文件
 with open(yamlfilepath, encoding='utf-8') as f:
     # safe_load()只能一次
     data = yaml.safe_load(f)
