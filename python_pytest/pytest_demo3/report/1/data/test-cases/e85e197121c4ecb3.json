@@ -1,0 +1,93 @@
+{
+  "uid": "e85e197121c4ecb3",
+  "name": "test_case",
+  "fullName": "test_hook#test_case",
+  "historyId": "12b183f5b446c10953f9433ed04d6dd2",
+  "time": {
+    "start": 1597108958252,
+    "stop": 1597108958252,
+    "duration": 0
+  },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "beforeStages": [
+    {
+      "name": "cmdoption",
+      "time": {
+        "start": 1597108958252,
+        "stop": 1597108958252,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "hasContent": false
+    }
+  ],
+  "testStage": {
+    "status": "passed",
+    "steps": [],
+    "attachments": [
+      {
+        "uid": "1863033afb74cbe6",
+        "name": "stdout",
+        "source": "1863033afb74cbe6.txt",
+        "type": "text/plain",
+        "size": 5
+      }
+    ],
+    "parameters": [],
+    "attachmentsCount": 1,
+    "shouldDisplayMessage": false,
+    "stepsCount": 0,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "suite",
+      "value": "test_hook"
+    },
+    {
+      "name": "host",
+      "value": "PC-202005170912"
+    },
+    {
+      "name": "thread",
+      "value": "9580-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_hook"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "e85e197121c4ecb3.json",
+  "parameterValues": []
+}

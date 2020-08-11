@@ -1,0 +1,43 @@
+{
+  "name": "test_case",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "9f9961f9-1e68-4466-8791-828558ff5ec7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1597108958252,
+  "stop": 1597108958252,
+  "uuid": "c7a6ead2-a7fc-41a1-be01-e47b56efea49",
+  "historyId": "12b183f5b446c10953f9433ed04d6dd2",
+  "testCaseId": "7c9751cab589041450efd6dea3c9e4db",
+  "fullName": "test_hook#test_case",
+  "labels": [
+    {
+      "name": "suite",
+      "value": "test_hook"
+    },
+    {
+      "name": "host",
+      "value": "PC-202005170912"
+    },
+    {
+      "name": "thread",
+      "value": "9580-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_hook"
+    }
+  ]
+}
