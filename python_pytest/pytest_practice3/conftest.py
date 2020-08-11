@@ -51,7 +51,6 @@ with open(yamlfilepath, encoding='utf-8') as f:
 
 
 # 使用fixture生成add的别名
-@pytest.mark.run(order=1)
 @pytest.fixture(params=adddatas, ids=myid1)
 def get_adddatas(request):
     data = request.param
@@ -59,7 +58,6 @@ def get_adddatas(request):
     return data
 
 
-@pytest.mark.run(order=2)
 # 使用fixture生成sub的别名
 @pytest.fixture(params=subdatas, ids=myid2)
 def get_subdatas(request):
@@ -68,7 +66,6 @@ def get_subdatas(request):
     return data
 
 
-@pytest.mark.run(order=3)
 # 使用fixture生成mul的别名
 @pytest.fixture(params=muldatas, ids=myid3)
 def get_muldatas(request):
@@ -77,7 +74,6 @@ def get_muldatas(request):
     return data
 
 
-@pytest.mark.run(order=4)
 # 使用fixture生成div的别名
 @pytest.fixture(params=divdatas, ids=myid4)
 def get_divdatas(request):
