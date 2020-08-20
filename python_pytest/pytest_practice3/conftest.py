@@ -1,6 +1,5 @@
 # -*-coding:utf-8-*-
 from typing import List
-
 import pytest
 import yaml
 import sys
@@ -104,33 +103,12 @@ def pytest_collection_modifyitems(
 def pytest_addoption(parser):
     mygroup = parser.getgroup("hogwarts")  # group将下面所有的option都展示在这个group下
     mygroup.addoption("--env",  # 注册一个命令行选项
-                      default='test',  # 默认值
-                      dest='env',  # 存储的变量
-                      help='测试环境'  # 参数说明
+                      default='test',  # 没有传递参数就使用默认值，传递参数会取代默认值
+                      dest='dev' or 'st',  # 存储的变量
+                      help='env测试环境,dev开发环境, st预生产环境',  # 参数说明
                       )
-    mygroup.addoption("--dev",  # 注册一个命令行选项
-                      default='dev',  # 默认值
-                      dest='dev',  # 存储的变量
-                      help='dev测试环境'  # 参数说明
-                      )
-    mygroup.addoption("--st",  # 注册一个命令行选项
-                      default='st',  # 默认值
-                      dest='st',  # 存储的变量
-                      help='st测试环境'  # 参数说明
-                      )
-
-
 # 获取参数
 @pytest.fixture(scope='session')
 def cmdoption(request):
     return request.config.getoption("--env", default='test')
 
-
-@pytest.fixture(scope='session')
-def cmdoption1(request):
-    return request.config.getoption("--dev", default='dev')
-
-
-@pytest.fixture(scope='session')
-def cmdoption2(request):
-    return request.config.getoption("--st", default='st')
