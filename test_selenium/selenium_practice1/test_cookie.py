@@ -8,11 +8,16 @@ from datetime import time
 from time import sleep
 
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 
 class TestCookie():
     def setup(self):
+        #复用浏览器
+        # option = Options()
+        # option.debugger_address = '127.0.0.1:9222'
+        # self.driver = webdriver.Chrome(options=option)
         # # 实例化driver
         self.driver = webdriver.Chrome()
         # 隐式等待
