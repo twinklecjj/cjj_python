@@ -109,6 +109,7 @@ class TestDemo():
              'path': '/', 'secure': False, 'value': '0'},
             {'domain': '.work.weixin.qq.com', 'expiry': 1600553547, 'httpOnly': False, 'name': 'wwrtx.i18n_lan',
              'path': '/', 'secure': False, 'value': 'zh-cn'}]
+
         for cookie in cookies:
             if 'expiry' in cookie.keys():
                 cookie.pop("expiry")
