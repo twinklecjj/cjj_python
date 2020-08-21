@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 
 class TestCookie():
     def setup(self):
-        #复用浏览器
+        # 复用浏览器
         # option = Options()
         # option.debugger_address = '127.0.0.1:9222'
         # self.driver = webdriver.Chrome(options=option)
