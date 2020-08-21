@@ -32,9 +32,18 @@
 
 ./python_pytest/pytest_demo2
 #### python pytest测试实战2课堂练习
-
 ./python_pytest/pytest_practice2
 #### python pytest测试实战2
+
+./python_pytest/pytest_demo3
+#### python pytest测试实战3课堂练习
+./python_pytest/pytest_practice3
+#### python pytest测试实战3
+
+./test_selenium/selenium_demo1
+#### web自动化测试实战1课堂练习
+./test_selenium/selenium_practice1
+#### web自动化测试实战1
 
 
 
