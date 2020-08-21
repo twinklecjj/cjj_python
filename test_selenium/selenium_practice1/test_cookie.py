@@ -6,7 +6,6 @@ import os
 import shelve
 from datetime import time
 from time import sleep
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
